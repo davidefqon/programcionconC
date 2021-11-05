@@ -1,4 +1,31 @@
-#include<iostream> 
+
+#include <iostream>
+
+using namespace std;
+
+template<typename  T>
+
+class A{
+    T dato;
+public:
+    A();
+    A(T);   
+    void print();
+    
+    
+};
+
+template<typename  T>
+A<T>::A(){}
+template<typename  T>
+A<T>::A(T d):dato(d){}
+
+template<typename  T>
+void A<T>::print(){
+    cout<<dato<<"\n";
+}
+
+
 using namespace std;
 template<typename L> 
 class Alumno{
@@ -28,13 +55,20 @@ L dni , anio;
  	cout<<"su edad actual es: "<<2021-anio<<endl;
  	cout<<"Su nombre es: "<<nombre<<endl;
  };
- 
- 
- 
- 
- int main(){
- 	
- 	Alumno<int>obj1(73517491,2002);
+
+
+//include a.h
+
+
+int main()
+{
+    
+    A <string> a("YORDAN");
+    a.print();
+    
+    	Alumno<int>obj1(73517491,2002);
  	obj1.print();
 
- }
+    
+    return 0;
+}
