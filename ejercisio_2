@@ -3,6 +3,7 @@
 
 using namespace std;
 
+//PLANTILLA NUEVA CLASE A EJERSICIO ----------------------------------------------------
 template<typename  T>
 
 class A{
@@ -25,8 +26,8 @@ void A<T>::print(){
     cout<<dato<<"\n";
 }
 
+//PLANTILLA NUEVA CLASE ALUMNO EJERSICIO B----------------------------------------------------
 
-using namespace std;
 template<typename L> 
 class Alumno{
 L dni , anio;
