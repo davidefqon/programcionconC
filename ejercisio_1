@@ -24,7 +24,13 @@ void A<T>::print(){
 
 int main()
 {
-    
+    /*A<int> a(5), a1(11);
+    a.print();
+    a1.print();
+    A<double> d1(3.14);
+    d1.print();
+    A<bool> b1(true);
+    b1.print();*/
     A <string> a("HOLA");
     a.print();
     
