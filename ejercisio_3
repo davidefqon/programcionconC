@@ -1,1 +1,55 @@
+#include <stdio.h>
 
+#include <iostream>
+
+using namespace std;
+
+template<typename L> 
+class fraccion{
+L variable1;
+L variable2;
+L variable3;
+L variable4;
+  
+  public:
+  	fraccion(L a, L b,L c,L d){
+  	  		
+         variable1=a;
+         variable2=b;
+         variable3=c;
+         variable4=d;
+  		
+	  }
+	  
+	  
+	  void print();
+	  
+ };
+ 
+ template<typename L> 
+ void fraccion<L>::print(){
+     L numerador;
+     L denominador;
+     
+ 	numerador=variable1*variable2;
+ 	denominador=variable3*variable4;
+ 	cout<<variable1<<" x "<<variable2<<" = "<<numerador<<endl;
+ 	cout<<variable3<<" x "<<variable4<<" = "<<denominador<<endl;
+ 	cout<<"resultado es: "<<numerador<<" / "<<denominador<<endl;
+
+ };
+
+
+//include a.h
+
+
+int main()
+{
+    
+ 
+    fraccion<int>obj1(1,2,3,4);
+ 	obj1.print();
+
+    
+    return 0;
+}
