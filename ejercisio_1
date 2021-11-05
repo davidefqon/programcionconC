@@ -1,1 +1,32 @@
+#include <iostream>
+using namespace std;
 
+template<typename  T>
+
+class A{
+    T dato;
+public:
+    A();
+    A(T);   
+    void print();
+};
+
+
+template<typename  T>
+A<T>::A(){}
+template<typename  T>
+A<T>::A(T d):dato(d){}
+template<typename  T>
+void A<T>::print(){
+    cout<<dato<<"\n";
+}
+
+
+int main()
+{
+    
+    A <string> a("HOLA");
+    a.print();
+    
+    return 0;
+}
