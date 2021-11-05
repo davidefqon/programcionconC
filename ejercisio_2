@@ -58,12 +58,17 @@ L dni , anio;
 
 int main()
 {
+    //usando la plantilla A
     
     A <string> a("YORDAN");
     a.print();
     
-    	Alumno<int>obj1(73517491,2002);
- 	obj1.print();
+    
+    
+     //usando la plantilla Alumno
+     
+    Alumno<int>obj1(73517491,2002);
+    obj1.print();
 
     
     return 0;
