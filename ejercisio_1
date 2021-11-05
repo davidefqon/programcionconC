@@ -1,39 +1,39 @@
 #include <iostream>
+
+
 using namespace std;
 
-template<typename  T>
 
+template<typename T>
 class A{
-    T dato;
-public:
-    A();
-    A(T);   
-    void print();
+   T dato;
+ public:
+   A();
+   A(T);
+   void print();
 };
 
-
-template<typename  T>
+template<typename T>
 A<T>::A(){}
-template<typename  T>
-A<T>::A(T d):dato(d){}
-template<typename  T>
+
+template<typename T>
+A<T>::A(T d):dato(d){ }
+
+template<typename T>
 void A<T>::print(){
-    cout<<dato<<"\n";
+    std::cout<<dato<<"\n";
 }
-
-
+// archivo externo colocar #include <A.h>
 int main()
 {
-    /*A<int> a(5), a1(11);
+    A<int> a(5), a1(11);
     a.print();
     a1.print();
     A<double> d1(3.14);
     d1.print();
     A<bool> b1(true);
-    b1.print();*/
-    A <string> a("HOLA");
-    a.print();
-    A<std::string> nombre("hola");
+    b1.print();
+    A<std::string> nombre("david ahh");
     nombre.print();
     
     return 0;
