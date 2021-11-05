@@ -2,7 +2,7 @@
 
 using name space std;
 asasasasasassasa
-holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+hola
 int main()
 {
     A<int> a(5), a1(11);
@@ -14,4 +14,4 @@ int main()
     b1.print();
     return 0;
 }
-gaaaaaaaaaaaaaaaaaaaaa!
+gaa
