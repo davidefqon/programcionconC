@@ -33,6 +33,8 @@ int main()
     b1.print();*/
     A <string> a("HOLA");
     a.print();
+    A<std::string> nombre("hola");
+    nombre.print();
     
     return 0;
 }
