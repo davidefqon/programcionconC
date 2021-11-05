@@ -42,10 +42,22 @@ L variable4;
 
 //include a.h
 
-
 int main()
 {
+    //usando la plantilla A
     
+    A <string> a("YORDAN");
+    a.print();  
+    
+    
+     //usando la plantilla Alumno
+     
+    Alumno<int>obj1(73517491,2002);
+    obj1.print();
+
+    
+
+ 
  
     fraccion<int>obj1(1,2,3,4);
  	obj1.print();
